@@ -1,0 +1,37 @@
+.container
+  .head.d-flex
+    img.logo(src='/images/logo.png' alt)
+    .items.d-flex
+      li.nav-item
+        a.nav-link(aria-current='page' href='/') Главная
+      li.nav-item
+        a.nav-link.pl-lg-5(href='/products') Продукты
+      li.nav-item
+        a.nav-link(href='/add') Добавить
+      li.nav-item
+        a.nav-link(href='/register') Регистратция
+      li.nav-item
+        a.nav-link(href='/register/login') Авторизация
+    .phone.d-flex
+      a(href='#')
+        i.fa.fa-phone-square
+      a.call(href='tel:998938220305') +998938220305
+.navbars
+  nav.navbar.navbar-expand-lg.navbar-light
+    .container
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(aria-current='page' href='#') Топовые очки
+          li.nav-item
+            a.nav-link(aria-current='page' href='#') Информации
+          li.nav-item
+            a.nav-link(aria-current='page' href='#') О компании
+          li.nav-item
+            a.nav-link(aria-current='page' href='#') Контакты
+        form.d-flex
+          input.form-control.me-2(type='search' name="search" placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-success(type='submit')
+            i.fa.fa-search
